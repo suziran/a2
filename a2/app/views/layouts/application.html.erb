@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rails101</title>
+        <title>suziran vedio</title>
         <%= csrf_meta_tags %>
 
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,27 +12,7 @@
 
         <div class="container-fluid">
             <%= render "common/navbar" %>
-            <%= yield %>
-        </div>
-
-        <%= render "common/footer" %>
-
-    </body>
-</html>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Rails101</title>
-        <%= csrf_meta_tags %>
-
-        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    </head>
-
-    <body>
-
-        <div class="container-fluid">
-            <%= render "common/navbar" %>
+            <%= render "common/flashes" %>
             <%= yield %>
         </div>
 
